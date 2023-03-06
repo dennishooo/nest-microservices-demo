@@ -1,2 +1,3 @@
-export * from './common.module';
-export * from './common.service';
+export * from './abstract.module';
+export * from './abstract.repository';
+export * from './abstract.schema';
