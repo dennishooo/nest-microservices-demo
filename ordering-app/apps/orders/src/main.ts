@@ -7,8 +7,6 @@ async function bootstrap() {
   const app = await NestFactory.create(OrdersModule);
   app.useGlobalPipes(new ValidationPipe());
   const configService = app.get(ConfigService);
-  console.log(configService.get<string>('MONGODB_URI'));
-
   await app.listen(configService.get('PORT'));
 }
 bootstrap();
