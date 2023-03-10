@@ -10,4 +10,8 @@ export class OrdersController {
   async createOrder(@Body() request: CreateOrderRequest) {
     return await this.ordersService.createOrder(request);
   }
+  @Get()
+  async getOrder() {
+    return await this.ordersService.getOrder();
+  }
 }

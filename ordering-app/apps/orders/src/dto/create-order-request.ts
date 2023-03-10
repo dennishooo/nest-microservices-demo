@@ -13,6 +13,6 @@ export class CreateOrderRequest {
   @IsPositive()
   price: number;
 
-  @IsPhoneNumber()
+  @IsPhoneNumber('HK')
   phoneNumber: string;
 }

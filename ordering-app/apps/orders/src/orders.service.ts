@@ -9,4 +9,7 @@ export class OrdersService {
   async createOrder(request: CreateOrderRequest) {
     return await this.orderRepository.create(request);
   }
+  async getOrder() {
+    return await this.orderRepository.find({});
+  }
 }
