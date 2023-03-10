@@ -9,7 +9,4 @@ export class OrdersService {
   async createOrder(request: CreateOrderRequest) {
     return await this.orderRepository.create(request);
   }
-  getHello(): string {
-    return 'Hello World!';
-  }
 }
